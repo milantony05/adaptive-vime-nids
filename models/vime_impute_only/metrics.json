@@ -1,0 +1,20 @@
+{
+  "roc_auc": 0.6891678180320089,
+  "pr_auc": 0.7139664976562619,
+  "seed": 42,
+  "objective": "impute",
+  "input_dim": 65,
+  "latent_dim": 16,
+  "hidden_dim": 32,
+  "mask_prob": 0.2,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "max_epochs": 200,
+  "patience": 15,
+  "train_rows": 50400,
+  "validation_rows": 5600,
+  "epochs_trained": 69,
+  "best_epoch": 54,
+  "best_val_loss": 0.08780300617218018,
+  "final_val_loss": 0.08920704573392868
+}

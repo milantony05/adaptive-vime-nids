@@ -1,0 +1,75 @@
+{
+  "configuration_audit": {
+    "vime_variants_share_preprocessed_data": true,
+    "vime_variants_use_benign_only_training": true,
+    "vime_variants_use_seed_42_and_90_10_split": true,
+    "vime_variants_use_p20_empirical_benign_marginal_corruption": true,
+    "vime_variants_use_65_32_16_encoder_and_16_65_heads": true,
+    "vime_variants_use_adam_lr_1e-3_batch_256_max_epochs_200_patience_15": true,
+    "vime_variants_use_clean_test_and_benign_latent_centroid": true,
+    "existing_experiment_directories_targeted_by_ablation_runner": false,
+    "existing_experiment_directories_targeted_by_audit_runner": false,
+    "dae_centroid_audit": "not_applicable_reconstruction_error_baseline"
+  },
+  "per_experiment_audit": {
+    "DAE": {
+      "checkpoint_loadable": true,
+      "scores_finite": true,
+      "labels_match_canonical": true,
+      "centroid_audit": "not_applicable",
+      "score_recompute_max_abs_error": 0.0,
+      "centroid_recompute_max_abs_error": null,
+      "metrics_match_saved_scores": true,
+      "test_labels_used_only_for_final_evaluation": true,
+      "benign_only_training": true
+    },
+    "Mask-only VIME": {
+      "checkpoint_loadable": true,
+      "scores_finite": true,
+      "labels_match_canonical": true,
+      "centroid_audit": "pass",
+      "score_recompute_max_abs_error": 0.0,
+      "centroid_recompute_max_abs_error": 0.0,
+      "metrics_match_saved_scores": true,
+      "test_labels_used_only_for_final_evaluation": true,
+      "benign_only_training": true
+    },
+    "Imputation-only VIME": {
+      "checkpoint_loadable": true,
+      "scores_finite": true,
+      "labels_match_canonical": true,
+      "centroid_audit": "pass",
+      "score_recompute_max_abs_error": 0.0,
+      "centroid_recompute_max_abs_error": 0.0,
+      "metrics_match_saved_scores": true,
+      "test_labels_used_only_for_final_evaluation": true,
+      "benign_only_training": true
+    },
+    "Corrected Vanilla VIME": {
+      "checkpoint_loadable": true,
+      "scores_finite": true,
+      "labels_match_canonical": true,
+      "centroid_audit": "pass",
+      "score_recompute_max_abs_error": 0.0,
+      "centroid_recompute_max_abs_error": 0.0,
+      "metrics_match_saved_scores": true,
+      "test_labels_used_only_for_final_evaluation": true,
+      "benign_only_training": true
+    },
+    "Adaptive VIME": {
+      "checkpoint_loadable": true,
+      "scores_finite": true,
+      "labels_match_canonical": true,
+      "centroid_audit": "pass",
+      "score_recompute_max_abs_error": 0.0,
+      "centroid_recompute_max_abs_error": 0.0,
+      "metrics_match_saved_scores": true,
+      "test_labels_used_only_for_final_evaluation": true,
+      "benign_only_training": true
+    }
+  },
+  "all_saved_scores_finite": true,
+  "all_labels_match_canonical": true,
+  "all_metrics_match_saved_scores": true,
+  "vime_centroid_audits_pass": true
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "model":"DAE",
+    "best_epoch":191,
+    "best_validation_loss":0.0112458197,
+    "roc_auc":0.8843132639,
+    "pr_auc":0.9029249286
+  },
+  {
+    "model":"Mask-only VIME",
+    "best_epoch":100,
+    "best_validation_loss":0.462667942,
+    "roc_auc":0.8837454507,
+    "pr_auc":0.8962055739
+  },
+  {
+    "model":"Imputation-only VIME",
+    "best_epoch":54,
+    "best_validation_loss":0.0878030062,
+    "roc_auc":0.689167818,
+    "pr_auc":0.7139664977
+  },
+  {
+    "model":"Corrected Vanilla VIME",
+    "best_epoch":79,
+    "best_validation_loss":0.6737679839,
+    "roc_auc":0.7188119329,
+    "pr_auc":0.7487800886
+  },
+  {
+    "model":"Adaptive VIME",
+    "best_epoch":79,
+    "best_validation_loss":-0.2235694081,
+    "roc_auc":0.7526778605,
+    "pr_auc":0.7534406214
+  }
+]
